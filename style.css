@@ -43,6 +43,7 @@ section {
       padding-right: 40%;
       padding-left: 40%;
     }
+}
 
     @media (max-width: 768px) {
       nav {
