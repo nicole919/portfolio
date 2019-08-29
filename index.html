@@ -1,51 +1,40 @@
 <!DOCTYPE html>
-<lang = en></lang>
+<lang = "en"></lang>
 <head>
     <title> Nicole Fafard</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<nav role = "navigation"><a href="jumptoproject-section">nav</a> | <a href="jumptocontactorfooter">nav</a></nav>
+<nav role="navigation"><a id="projectsLink"> Projects</a> | <a id = "contactsLink">Contact</a></nav>
 
 <main>
   <header>
-<h1> Hello, I'm Nicole!</h1>
-<p class="bio">bio stuff~</p>
-  </header>
-<h1>projects</h1>
+<h1 class="nicole"> Hello, I'm Nicole! :)</h1>
+<p class="bio">I’m a beginner web developer from Arizona - currently enrolled in the Web Developer Track from Bloc.io. 
+My ever-growing skill set includes HTML, CSS, and JS. In my spare time, I enjoy running and managing impressive farms in video games.</p>
+ </header>
 
-<h3>title</h3>
-  <section class = "project-section"> <!--screenshot of project--></section>
-<p> description about project </p>
-<a href="repolink">Repo</a> |
-<a href="livelink" class="project-a">Link</a>
-
-<h3>title</h3>
-<section class = "project-section"> <!--screenshot of project--></section>
-<p> description about project </p>
-<a href="repolink">Repo</a> |
-<a href="livelink" class="project-a">Link</a>
-
-<h3>title</h3>
-<section class = "project-section"> <!--screenshot of project--></section>
-<p> description about project </p>
-<a href="repolink">Repo</a> |
-<a href="livelink" class="project-a">Link</a>
-
+<section id = "projectsSection"></section>
+<h3>Brady Bunch Quiz</h3> 
+<a href="https://nicole919.github.io/quiz-app/"><img src="https://i.imgur.com/rfEPait.jpg" class = "brady" alt ="Brady Bunch Quiz"></a>
+<p>This is my first project using Javascript to create a short quiz!</p>
+<a href="https://github.com/nicole919/quiz-app" class="project-a">Repo</a> |
+<a href="https://nicole919.github.io/quiz-app/" class="project-a">Link</a>
 </main>
 
 <footer>
-    <p class = "contact">Let's get in touch!</p>
-   <ul class="s-media">
-			<li class="s-icon"><!--img and link email--></li>
-			<li class="s-icon"><!--img and link github--></li>
-			<li class="s-icon"><!--img and link linkedin--></li>
-		</ul>
-    
+  <section id = "contactSection"></section> 
+   <p class = "contact">Let's get in touch!</p>
+   <div class = "s-icons">
+  <a id="email" href="mailto: nicole.fafard@gmail.com"><img src="https://image.flaticon.com/icons/svg/59/59965.svg" class = "s-media" alt ="Email"></a>
+    <a id="github" href="https://github.com/nicole919"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class ="s-media" alt ="github"></a>
+    <a id="linkedin" href="https://www.linkedin.com/in/nicole-fafard/"><img src="https://image.flaticon.com/icons/png/512/61/61109.png" class = "s-media" alt = "linkedin"></a>
+    </div>
 </footer>
 
-
+<script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
