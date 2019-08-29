@@ -1,11 +1,51 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
 body {
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
+text-align: center;
+font-family: 'Roboto Condensed', sans-serif;
+background-color: #81d8d0;
 
+}
+
+a {
+text-decoration: none;
+color: #00008B;
+}
+
+a:hover {
+text-decoration: underline;
+cursor: pointer;
+}
+
+header {
+height: 100vh;
+}
+
+.nicole {
+font-size: 66px;
+margin-top: 60px;
+}
+
+.nicole:hover {
+color: hotpink;
+}
+
+nav {
+  text-align: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  font-size: 20px;
+  padding: 10px;
+}
+
+main {
+  margin-top: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .bio {
@@ -17,36 +57,88 @@ body {
 
 }
 
-nav {
-    background-color: gray;
-    text-align: right;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    font-size: 30px;
-  }
-
-main {
-    padding: 20%;
-  }
-
-section {
-  height: 300px;
-  margin-top: 40px;
-  background-color: black;
-  }
-
-  @media (min-width: 1025px) {
-    .bio {
-      padding-right: 40%;
-      padding-left: 40%;
-    }
+.brady {
+height: 300px;
+margin-top: 20px;
+margin-left: 30%;
+margin-right: 30%;
+filter:drop-shadow(6px 6px 8px gray);
 }
 
-    @media (max-width: 768px) {
-      nav {
-        display: none;
-      }
-    }
+.project-a {
+  color: #00008B
+}
+
+.project-section {
+height: 250px;
+width: 250px;
+background-color: black;
+margin-top: 60px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.contact {
+margin-top: 20px;
+font-size: 30px;
+}
+
+.s-media {
+height: 50px;
+padding-top: 20px;
+display: inline-block;
+margin: auto;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.s-icons {
+display: grid;
+grid-template-columns: 25% auto auto auto 25%;
+grid-column-gap: 10px;
+}
+
+#email {
+grid-column-start: 2;
+grid-column-end: 3;
+}
+
+#github {
+grid-column-start: 3;
+grid-column-end: 4;
+}
+
+#linkedin {
+grid-column-start: 4;
+grid-column-end: 5;
+}
+
+footer {
+margin-top: 70px;
+border-top: solid 1px rgba(0, 0, 0, 0.05);
+padding-top: 20px;
+}
+
+
+
+@media (min-width: 1025px) {
+  .bio {
+    padding-right: 40%;
+    padding-left: 40%;
+  }
+.s-media {
+  transform: scale(1.05);
+}
+  main {
+     border-top: solid 1px rgba(0, 0, 0, 0.05);
+  }
+}
+
+@media (max-width: 768px) {
+nav {
+  display: none;
+}
+.brady {
+  margin: auto;
+}
+}
