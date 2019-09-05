@@ -24,7 +24,7 @@ height: 100vh;
 }
 
 .nicole {
-font-size: 66px;
+font-size: 75px;
 margin-top: 60px;
 }
 
@@ -37,7 +37,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  right: 10px;
   z-index: 10;
   font-size: 20px;
   padding: 10px;
@@ -49,16 +49,17 @@ main {
 }
 
 .bio {
-  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
   padding: 30px;
   display: inline-block;
   line-height: 24px;
   font-size: 16px;
-
 }
 
 .brady {
-height: 300px;
+width: 300px;
+height: auto;
 margin-top: 20px;
 margin-left: 30%;
 margin-right: 30%;
@@ -92,53 +93,43 @@ padding-left: 10px;
 padding-right: 10px;
 }
 
-.s-icons {
-display: grid;
-grid-template-columns: 25% auto auto auto 25%;
-grid-column-gap: 10px;
-}
-
-#email {
-grid-column-start: 2;
-grid-column-end: 3;
-}
-
-#github {
-grid-column-start: 3;
-grid-column-end: 4;
-}
-
-#linkedin {
-grid-column-start: 4;
-grid-column-end: 5;
-}
-
-footer {
-margin-top: 70px;
-border-top: solid 1px rgba(0, 0, 0, 0.05);
-padding-top: 20px;
-}
-
-
-
 @media (min-width: 1025px) {
   .bio {
-    padding-right: 40%;
-    padding-left: 40%;
+    padding-left: 30%;
+    padding-right: 30%;
   }
-.s-media {
-  transform: scale(1.05);
-}
+  footer {
+    margin-top: 70px;
+    margin-bottom: 45px;
+    border-top: solid 1px rgba(0, 0, 0, 0.05);
+    padding-top: 20px;
+  }
   main {
      border-top: solid 1px rgba(0, 0, 0, 0.05);
   }
+  .nicole {
+    margin-top: 50px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+.bio {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  header {
+    height: 70vh;
+  }
+  .nicole {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 760px) {
 nav {
   display: none;
-}
+  }
 .brady {
   margin: auto;
-}
+  }
 }
