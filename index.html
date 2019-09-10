@@ -1,40 +1,55 @@
 <!DOCTYPE html>
-<lang = "en"></lang>
+<html lang="en">
+
 <head>
     <title> Nicole Fafard</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<nav role="navigation"><a id="projectsLink"> Projects</a> | <a id = "contactsLink">Contact</a></nav>
+  
+  <header>
+        <div id="topnav">
+          <ul id="myLinks">
+             <li><a id ="bioLink">Bio</a></li> | <li><a id="projectsLink"> Projects</a></li>
+          </ul>
+         <a id="hamburger" href="javascript:void(0);" class="icon">
+            <i id="hamburgerIcon" class="fa fa-bars"></i>
+            </a>
+          </div>
+</header>
 
 <main>
-  <header>
-<h1 class="nicole"> Hello, I'm Nicole! :)</h1>
-<p class="bio">I’m a beginner web developer from Arizona - currently enrolled in the Web Developer Track from Bloc.io. 
-My ever-growing skill set includes HTML, CSS, and JS. In my spare time, I enjoy running and managing impressive farms in video games.</p>
- </header>
+    
+    <section id="bioBio">
+    <h1 class="nicole"> Hello, I'm Nicole! :)</h1>
+      <p class="bio">I’m a beginner web developer from Arizona. After being in retail for 15 years, I decided to challenge myself by learning web development - and I am so glad I did! Currently, 
+my skillset includes HTML, CSS, and JS. The further I get into my learning, the more eager I am to put my skills into practice and work alongside experienced programmers to build applications. In my spare time, I enjoy running and managing impressive farms in video games.</p>
+  
+<div class = "s-icons">
+  <a id="email" href="mailto:nicole.fafard@gmail.com" target="_blank"><img src="https://image.flaticon.com/icons/svg/59/59965.svg" class = "s-media" alt ="Email"></a>
+  <a id="github" href="https://github.com/nicole919" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class ="s-media" alt ="github"></a>
+  <a id="linkedin" href="https://www.linkedin.com/in/nicole-fafard/" target="_blank"><img src="https://image.flaticon.com/icons/png/512/61/61109.png" class = "s-media" alt = "linkedin"></a>
+</div>
+</section>
 
-<section id = "projectsSection"></section>
-<h3>Brady Bunch Quiz</h3> 
-<a href="https://nicole919.github.io/quiz-app/"><img src="https://i.imgur.com/rfEPait.jpg" class = "brady" alt ="Brady Bunch Quiz"></a>
-<p>This is my first project using Javascript to create a short quiz!</p>
-<a href="https://github.com/nicole919/quiz-app" class="project-a">Repo</a> |
-<a href="https://nicole919.github.io/quiz-app/" class="project-a">Link</a>
+  <section id = "projectsSection">
+    <h1 class="projects-header">Projects</h1>
+      <h3 class="bb-quiz">Brady Bunch Quiz</h3> 
+        <a href="https://nicole919.github.io/quiz-app/" target="_blank"><img src="rfEPait.jpg" class="brady" alt ="Brady Bunch Quiz"></a>
+          <p class="brady-project-desc">Test your knowledge of the Brady Family with this quiz! <br> This is my first project using Javascript to create a short quiz.</p>
+          <p class="tech-used">Custom Javascript / HTML / CSS / JQuery</p>
+            <a href="https://github.com/nicole919/quiz-app" class="project-a" target="_blank">Repo</a> |
+            <a href="https://nicole919.github.io/quiz-app/" class="project-a" target="_blank">Link</a>
+          </section>
 </main>
 
 <footer>
-  <section id = "contactSection"></section> 
-   <p class = "contact">Let's get in touch!</p>
-   <div class = "s-icons">
-  <a id="email" href="mailto: nicole.fafard@gmail.com"><img src="https://image.flaticon.com/icons/svg/59/59965.svg" class = "s-media" alt ="Email"></a>
-    <a id="github" href="https://github.com/nicole919"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class ="s-media" alt ="github"></a>
-    <a id="linkedin" href="https://www.linkedin.com/in/nicole-fafard/"><img src="https://image.flaticon.com/icons/png/512/61/61109.png" class = "s-media" alt = "linkedin"></a>
-    </div>
 </footer>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="script.js"></script>
 
-<script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
