@@ -1,0 +1,388 @@
+* {
+    box-sizing: border-box;
+    }
+  
+body {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #81d8d0;
+    }
+
+a {
+    text-decoration: none;
+    color: #00008B;
+    }
+    
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    }
+
+.nicole {
+    font-size: 75px;
+    margin-top: 60px;
+    display: block;
+    }
+         
+.nicole:hover {
+    color: hotpink;
+    }
+
+.brady {
+    filter:drop-shadow(6px 6px 8px gray);
+}
+
+
+
+@media (min-width: 300px) {
+    
+    /* nav section */
+    #hamburger {
+        color: black;
+    }
+
+    a {
+        padding: 3px;
+    } 
+
+   #topnav {
+        text-align: right;
+        position: fixed;
+        top: 0;
+        left: 8px;
+        right: 8px;
+        z-index: 10;
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        overflow: hidden;
+        background-color: #81d8d0;
+        padding-top: 10px;
+    }
+    
+    #myLinks {
+        display: none;
+        list-style: none;
+        padding-right: 10px;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    /* bio section */
+    .s-media {
+        height: 50px;
+        padding-top: 20px;
+        display: inline-block;
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 25px;
+        }
+
+   /* projects section */
+    .brady {
+        width: 250px;
+        height: auto;
+        margin: auto;
+            }
+
+    .projects-header {
+        padding-top: 40px;
+    }
+    
+    /* footer */        
+    footer {
+        padding-bottom: 30px;
+    }
+}
+
+/* iphone 5 */
+
+@media (min-width: 360px)  {
+    /*bio section */
+    .nicole {
+        margin-bottom: 15px;
+        font-size: 70px;
+    }
+    
+    .bio {
+        text-align: justify;
+        text-justify: inter-word;
+        padding-right: 15%;
+        padding-left: 15%;
+        display: inline-block;
+        line-height: 22px;
+        font-size: 16px;
+    }
+    
+    .s-media {
+        height: 50px;
+        padding-top: 20px;
+        display: inline-block;
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 15px;
+        }
+   
+        .s-icons {
+       padding-bottom: 50px;
+   }
+   /*project section */
+   .projects-header {
+       font-size: 40px;
+   }
+    
+   footer {
+        padding-bottom: 100px;
+    }
+   
+}
+
+/* galaxy s5 iphone 6 - iphone x */
+@media (min-width: 360px) and (min-height: 736px) {
+    /*bio section */
+    .bio {
+        text-align: justify;
+        text-justify: inter-word;
+        padding-top: 10px;
+        padding-right: 15%;
+        padding-left: 15%;
+        display: inline-block;
+        line-height: 24px;
+        font-size: 18px;
+    }
+
+    .s-icons {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    /*project section */
+    #projectsSection {
+        height: 80vh;
+    }
+
+    .projects-header {
+        padding-top: 50px;
+        font-size: 40px;
+    }
+
+    .brady {
+        height: 33vh;
+        width: auto;
+    }
+}
+
+
+/* ipad */
+@media (min-width: 768px) and (min-height: 1024px) {
+   /* navigation */
+   #topnav {
+        text-align: right;
+        position: fixed;
+        top: 0;
+        left: 8px;
+        right: 8px;
+        z-index: 10;
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        overflow: hidden;
+        background-color: #81d8d0;
+        padding-top: 10px;
+    }
+
+    /* bio section */
+    #bioBio {
+        height: 90vh;
+    }
+
+    .nicole {
+        padding-top: 50px;
+    }
+
+    .bio {
+        text-align: justify;
+        text-justify: inter-word;
+        padding-top: 10px;
+        padding-right: 10%;
+        padding-left: 10%;
+        display: inline-block;
+        line-height: 42px;
+        font-size: 32px;
+    }
+
+    .s-media {
+        height: 80px;
+        padding-top: 20px;
+        display: inline-block;
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 25px;
+    }
+
+    /*project section */
+    .projects-header {
+        font-size:75px;
+    }
+
+    .bb-quiz {
+        font-size: 40px;
+    }
+
+    .brady {
+        height: 400px;
+        width: auto;
+    }
+    .brady-project-desc {
+        font-size: 25px;
+    }
+
+    .tech-used {
+        font-size: 20px;
+    }
+
+    .project-a {
+        font-size: 25px;
+    }
+
+    /*footer */
+    footer {
+        padding-bottom: 100px;
+    }
+}
+
+/* ipad pro */
+@media (min-width: 1024px)  and (min-height: 1366px) {
+    #hamburger {
+        display:none;
+    }
+
+    #topnav {
+        text-align: right;
+        position: fixed;
+        top: 0;
+        left: 8px;
+        right: 8px;
+        z-index: 10;
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        overflow: hidden;
+        background-color: #81d8d0;
+        padding-top: 10px;
+    }
+
+    #myLinks {
+        display: flex;
+    }
+
+    #bioBio {
+        height: 50vh;
+    }
+
+    .nicole {
+        margin-top: 100px;
+        font-size: 100px;
+        padding-bottom: 50px;
+    }
+
+    .bio {
+        text-align: justify;
+        text-justify: inter-word;
+        padding: 30px;
+        padding-right: 20%;
+        padding-left: 20%;
+        display: inline-block;
+        line-height: 30px;
+        font-size: 24px;
+    }
+
+    #projectsSection {
+        height: 80vh;
+    }
+
+    .brady {
+        height: 33vh;
+    }
+
+    .projects-header {
+        margin-bottom: 2px;
+        padding-top: 50px;
+        font-size: 60px;
+    }
+
+    .bb-quiz {
+        font-size: 20px;
+    }
+}
+
+/* laptops and desktops */
+@media (min-width: 1025px)  {
+    /* nav section */
+    #hamburger {
+        display:none;
+    }
+
+    #topnav {
+        text-align: right;
+        position: fixed;
+        top: 0;
+        left: 8px;
+        right: 8px;
+        z-index: 10;
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        overflow: hidden;
+        background-color: #81d8d0;
+        padding-top: 10px;
+    }
+    /*bio section */
+    .nicole {
+        padding-top: 50px;
+    }
+    .bio {
+        text-align: justify;
+        text-justify: inter-word;
+        padding-top: 20px;
+        padding-right: 30%;
+        padding-left: 30%;
+        display: inline-block;
+        line-height: 24px;
+        font-size: 18px;
+    }
+    .s-icons {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+    .s-media {
+        height: 70px;
+    }
+    .s-media:hover {
+        transform: scale(1.1);
+      }
+    /* projects section */
+    .projects-header {
+        font-size: 75px;
+    }
+    .bb-quiz {
+        font-size: 30px;
+    }
+    .brady-project-desc {
+        font-size: 25px;
+    }
+    
+    .tech-used {
+        font-size: 20px;
+    }
+
+   #topnav {
+        font-size: 25px;
+    }
+}
