@@ -1,3 +1,4 @@
+
 $(() => {
   $('#projectsLink').on('click', () => {
     document.getElementById("projectsSection").scrollIntoView({behavior: 'smooth'});
