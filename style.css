@@ -327,7 +327,9 @@ a:hover {
     #hamburger {
         display:none;
     }
-
+    #myLinks {
+        display: flex;
+    }
     #topnav {
         text-align: right;
         position: fixed;
