@@ -33,6 +33,10 @@ a:hover {
     filter:drop-shadow(6px 6px 8px gray);
 }
 
+.weather {
+    filter:drop-shadow(6px 6px 8px gray);
+}
+
 
 
 
@@ -86,6 +90,11 @@ a:hover {
     .brady {
         width: 250px;
         height: auto;
+        margin: auto;
+            }
+    .weather {
+        width: 250px;
+        height: 250px;
         margin: auto;
             }
 
@@ -174,6 +183,10 @@ a:hover {
         height: 33vh;
         width: auto;
     }
+    .weather {
+        height: 33vh;
+        width: auto;
+    }
 }
 
 
@@ -239,7 +252,7 @@ a:hover {
         height: 400px;
         width: auto;
     }
-    .brady-project-desc {
+    .project-desc {
         font-size: 25px;
     }
 
@@ -378,7 +391,7 @@ a:hover {
     .bb-quiz {
         font-size: 30px;
     }
-    .brady-project-desc {
+    .project-desc {
         font-size: 25px;
     }
     
